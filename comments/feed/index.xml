@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	Comments for Bensley Media	</title>
-	<atom:link href="/comments/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="https://mrbensley.github.io/bensleymedia.github.io//comments/feed/" rel="self" type="application/rss+xml" />
+	<link>https://mrbensley.github.io/bensleymedia.github.io//</link>
 	<description>Video Production Adelaide</description>
 	<lastBuildDate>Mon, 25 Oct 2021 10:07:18 +0000</lastBuildDate>
 	<sy:updatePeriod>
