@@ -1,0 +1,187 @@
+/** gem-button animation **/
+.thegem-button-animate .gem-button {
+    opacity: 0;
+    transition: none;
+}
+
+.thegem-button-animated.thegem-button-animation-slide-up,
+.thegem-button-animated.thegem-button-animation-slide-down,
+.thegem-button-animated.thegem-button-animation-slide-left,
+.thegem-button-animated.thegem-button-animation-slide-right {
+    overflow: hidden;
+}
+
+/* Button Slide Up */
+.thegem-button-animated.thegem-button-animation-slide-up .gem-button {
+    animation-name: buttonSlideUp;
+    animation-fill-mode: forwards;
+    animation-duration: 1200ms;
+    animation-timing-function: cubic-bezier(0,1,0.3,1);
+}
+
+@keyframes buttonSlideUp {
+    from {
+        opacity: 1;
+        transform: translateY(170%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Button Slide Down */
+.thegem-button-animated.thegem-button-animation-slide-down .gem-button {
+    animation-name: buttonSlideDown;
+    animation-fill-mode: forwards;
+    animation-duration: 1200ms;
+    animation-timing-function: cubic-bezier(0,1,0.3,1);
+}
+
+@keyframes buttonSlideDown {
+    from {
+        opacity: 1;
+        transform: translateY(-170%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Button Slide Left */
+.thegem-button-animated.thegem-button-animation-slide-left .gem-button {
+    animation-name: buttonSlideLeft;
+    animation-fill-mode: forwards;
+    animation-duration: 1200ms;
+    animation-timing-function: cubic-bezier(0.25,1,0.5,1);
+}
+
+@keyframes buttonSlideLeft {
+    from {
+        opacity: 1;
+        transform: translateX(120%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Button Slide Right */
+.thegem-button-animated.thegem-button-animation-slide-right .gem-button {
+    animation-name: buttonSlideRight;
+    animation-fill-mode: forwards;
+    animation-duration: 1200ms;
+    animation-timing-function: cubic-bezier(0.25,1,0.5,1);
+}
+
+@keyframes buttonSlideRight {
+    from {
+        opacity: 1;
+        transform: translateX(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Button Fade Top to Bottom */
+.thegem-button-animated.thegem-button-animation-fade-down .gem-button {
+    animation-duration: .7s;
+    animation-fill-mode: both;
+    animation-name: buttonFadeDown;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+@keyframes buttonFadeDown {
+    from {
+        transform: translate(0, -10%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+
+/* Button Fade Bottom to Top */
+.thegem-button-animated.thegem-button-animation-fade-up .gem-button {
+    animation-duration: .7s;
+    animation-fill-mode: both;
+    animation-name: buttonFadeUp;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+@keyframes buttonFadeUp {
+    from {
+        transform: translate(0, 10%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+
+/* Button Fade Left to Right */
+.thegem-button-animated.thegem-button-animation-fade-right .gem-button {
+    animation-duration: .7s;
+    animation-fill-mode: both;
+    animation-name: buttonFadeRight;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+@keyframes buttonFadeRight {
+    from {
+        transform: translate(-10%, 0);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+
+/* Button Fade Right to Left */
+.thegem-button-animated.thegem-button-animation-fade-left .gem-button {
+    animation-duration: .7s;
+    animation-fill-mode: both;
+    animation-name: buttonFadeLeft;
+    animation-timing-function: cubic-bezier(.175,.885,.32,1.275);
+}
+
+@keyframes buttonFadeLeft {
+    from {
+        transform: translate(10%, 0);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+/* Button Simple Fade */
+.thegem-button-animated.thegem-button-animation-fade .gem-button {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: buttonFade;
+}
+
+@keyframes buttonFade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

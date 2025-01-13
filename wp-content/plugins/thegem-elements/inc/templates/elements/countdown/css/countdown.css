@@ -1,0 +1,142 @@
+.thegem-te-countdown .countdown-wrapper {
+	overflow: hidden;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.thegem-te-countdown .countdown-item {
+	display: block;
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.thegem-te-countdown .countdown-item:not(:last-child) {
+	border-right: 1px solid;
+}
+.thegem-te-countdown .item-count {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.thegem-te-countdown .item-count.countdown-title-thin {
+	font-family: var(--thegem-to-light-title-font-family);
+	font-weight: var(--thegem-to-light-title-font-weight);
+	font-style: var(--thegem-to-light-title-font-style);
+}
+.thegem-te-countdown .item-title{
+	position: relative;
+	padding-left: 5px;
+	display: inline-block;
+	top: 1px;
+	line-height: 0;
+	font-family: var(--thegem-to-body-tiny-font-family);
+	font-style: var(--thegem-to-body-tiny-font-style);
+	font-weight: var(--thegem-to-body-tiny-font-weight);
+	font-size: var(--thegem-to-body-tiny-font-size);
+	/*line-height: var(--thegem-to-body-tiny-line-height);*/
+	letter-spacing: var(--thegem-to-body-tiny-letter-spacing);
+	text-transform: var(--thegem-to-body-tiny-text-transform);
+}
+
+.thegem-te-countdown .odometer-inside {
+	display: flex;
+}
+
+/* Display first numbers */
+.thegem-te-countdown .countdown-hours .odometer-inside .odometer-digit:first-child,
+.thegem-te-countdown .countdown-minutes .odometer-inside .odometer-digit:first-child,
+.thegem-te-countdown .countdown-seconds .odometer-inside .odometer-digit:first-child{
+	display: none;
+}
+.thegem-te-countdown .odometer.odometer-theme-minimal {
+    display: inline-block;
+    vertical-align: middle;
+/*    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;*/
+    position: relative;
+}
+.thegem-te-countdown .count-2 .odometer.odometer-theme-minimal .odometer-digit:nth-child(2) .odometer-value,
+.thegem-te-countdown .count-3 .odometer.odometer-theme-minimal .odometer-digit:nth-child(2) .odometer-value,
+.thegem-te-countdown .count-4 .odometer.odometer-theme-minimal .odometer-digit:nth-child(2) .odometer-value {
+	text-align: right;
+}
+.thegem-te-countdown .odometer.odometer-theme-minimal .odometer-digit:first-child .odometer-value {
+	text-align: right;
+}
+.thegem-te-countdown .odometer.odometer-theme-minimal .odometer-digit:last-child .odometer-value {
+	text-align: left;
+}
+.thegem-te-countdown .item-count,
+.thegem-te-countdown .odometer.odometer-theme-minimal .odometer-digit {
+    display: inline-block;
+    vertical-align: middle;
+/*    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;*/
+    position: relative;
+}
+.thegem-te-countdown .odometer.odometer-theme-minimal .odometer-digit .odometer-digit-spacer {
+    display: inline-block;
+    vertical-align: top;
+/*    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;*/
+    visibility: hidden;
+}
+.thegem-te-countdown .odometer.odometer-theme-minimal .odometer-digit .odometer-digit-inner {
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+.thegem-te-countdown .odometer.odometer-theme-minimal .odometer-digit .odometer-ribbon {
+    display: block;
+}
+.thegem-te-countdown .odometer.odometer-theme-minimal .odometer-digit .odometer-ribbon-inner {
+    display: block;
+    -webkit-backface-visibility: hidden;
+}
+.thegem-te-countdown .odometer.odometer-theme-minimal .odometer-digit .odometer-value {
+    display: block;
+    -webkit-transform: translateZ(0);
+}
+.thegem-te-countdown .odometer.odometer-theme-minimal .odometer-digit .odometer-value.odometer-last-value {
+    position: absolute;
+    width: 100%;
+}
+.thegem-te-countdown .odometer.odometer-theme-minimal.odometer-animating-up .odometer-ribbon-inner {
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -ms-transition: -ms-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+}
+.thegem-te-countdown .odometer.odometer-theme-minimal.odometer-animating-up.odometer-animating .odometer-ribbon-inner {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+.thegem-te-countdown .odometer.odometer-theme-minimal.odometer-animating-down .odometer-ribbon-inner {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+.thegem-te-countdown .odometer.odometer-theme-minimal.odometer-animating-down.odometer-animating .odometer-ribbon-inner {
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -ms-transition: -ms-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}

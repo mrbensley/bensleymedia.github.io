@@ -1,0 +1,397 @@
+/* Hide toggle buttons */
+.thegem-te-menu-mobile__default.mobile-view .overlay-toggle,
+.thegem-te-menu-mobile__default.mobile-view .overlay-menu-back,
+.thegem-te-menu-mobile__default.mobile-view .hamburger-toggle,
+.thegem-te-menu-mobile__default.mobile-view .hamburger-menu-back{
+    display: none;
+}
+.thegem-te-menu-mobile__default.mobile-view{
+    position: relative;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    -webkit-perspective-origin: 50% 200%;
+    perspective-origin: 50% 200%;
+    z-index: 999;
+}
+@media (max-width: 767px) {
+    .thegem-te-menu-mobile__default{
+        position: relative;
+        -webkit-perspective: 1000px;
+        perspective: 1000px;
+        -webkit-perspective-origin: 50% 200%;
+        perspective-origin: 50% 200%;
+        z-index: 999;
+    }
+}
+.thegem-te-menu-mobile__default.mobile-view ul{
+    list-style: none;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0 !important;
+    background: none !important;
+}
+.thegem-te-menu-mobile__default.mobile-view li{
+    position: relative;
+    width: auto !important;
+}
+.thegem-te-menu-mobile__default.mobile-view li a{
+    position: relative;
+    display: block;
+    padding: 16px 30px;
+    margin: 0;
+    outline: none;
+    font-family: var(--thegem-to-mobile-menu-font-family, 'Source Sans Pro');
+    font-style: var(--thegem-to-mobile-menu-font-style, normal);
+    font-weight: var(--thegem-to-mobile-menu-font-weight, 400);
+    font-size: var(--thegem-to-mobile-menu-font-size, 16px);
+    line-height: var(--thegem-to-mobile-menu-line-height, 20px);
+    letter-spacing: var(--thegem-to-mobile-menu-letter-spacing, 0);
+    text-transform: var(--thegem-to-mobile-menu-text-transform, none);
+    text-decoration: none;
+    color: var(--thegem-to-mobile-menu-level1-color, #5F727F);
+    background-color: var(--thegem-to-mobile-menu-level1-bg-color, #F4F6F7);
+    border: 1px solid var(--thegem-to-mobile-menu-border-color, #DFE5E8);
+}
+.thegem-te-menu-mobile__default.mobile-view li + li > a,
+.thegem-te-menu-mobile__default.mobile-view li + li > span > a{
+    border-top: 0;
+}
+.thegem-te-menu-mobile__default.mobile-view li.menu-item-current > a,
+.thegem-te-menu-mobile__default.mobile-view li.menu-item-active > a,
+.thegem-te-menu-mobile__default.mobile-view li.menu-item-current > span > a,
+.thegem-te-menu-mobile__default.mobile-view li.menu-item-active > span > a{
+    padding-left: 26px;
+    color: var(--thegem-to-mobile-menu-level1-active-color, #3C3950);
+    background-color: var(--thegem-to-mobile-menu-level1-active-bg-color, #FFFFFF);
+    border-left: 4px solid var(--thegem-to-styled-color1, #00BCD4);
+}
+.thegem-te-menu-mobile__default.mobile-view li.dl-back > a{
+    text-align: right;
+    padding-right: 20px;
+    color: var(--thegem-to-mobile-menu-level2-color, #5F727F);
+}
+.thegem-te-menu-mobile__default.mobile-view li.dl-back:after,
+.thegem-te-menu-mobile__default.mobile-view li.menu-item-parent > a:after,
+.thegem-te-menu-mobile__default.mobile-view li.menu-item-parent > span > a:after,
+.thegem-te-menu-mobile__default.mobile-view li.dl-parent > a:after {
+    content: '\e601';
+    font-family: 'thegem-icons';
+    position: absolute;
+    width: 9px;
+    height: 16px;
+    right: 20px;
+    top: 50%;
+    margin-top: -8px;
+    font-size: 16px;
+    line-height: 16px;
+    color: inherit;
+}
+.thegem-te-menu-mobile__default.mobile-view li.dl-back:after{
+    left: 33px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.thegem-te-menu-mobile__default.mobile-view .dl-menu{
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    top: 100%;
+    margin: 0;
+    padding: 0 21px;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+@media (max-width: 767px) {
+    .thegem-te-menu-mobile__default .dl-menu{
+        position: absolute;
+        width: 100vw;
+        left: 0;
+        top: 100%;
+        margin: 0;
+        padding: 0 21px;
+        opacity: 0;
+        pointer-events: none;
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+}
+
+.thegem-te-menu-mobile__default.mobile-view .overlay-menu-wrapper{
+    height: 0;
+    width: 0;
+}
+.thegem-te-menu-mobile__default.mobile-view .mobile-menu-slide-wrapper {
+    height: 0;
+    width: 0;
+}
+.thegem-te-menu-mobile__default.mobile-view .hamburger-menu-back {
+    height: 0;
+    width: 0;
+}
+
+.thegem-te-menu-mobile__default.mobile-view .dl-menu.dl-menu-toggle{
+    transition: all 0.3s ease;
+}
+.thegem-te-menu-mobile__default.mobile-view .dl-menu.dl-menuopen{
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+/* Hide the inner submenus */
+.thegem-te-menu-mobile__default.mobile-view li .dl-submenu{
+    display: none;
+}
+/*
+When a submenu is openend, we will hide all li siblings.
+For that we give a class to the parent menu called "dl-subview".
+We also hide the submenu link.
+The opened submenu will get the class "dl-subviewopen".
+All this is done for any sub-level being entered.
+*/
+.thegem-te-menu-mobile__default.mobile-view .dl-menu.dl-subview li,
+.thegem-te-menu-mobile__default.mobile-view .dl-menu.dl-subview li.dl-subviewopen > a,
+.thegem-te-menu-mobile__default.mobile-view .dl-menu.dl-subview li.dl-subviewopen > span > a,
+.thegem-te-menu-mobile__default.mobile-view .dl-menu.dl-subview li.dl-subview > a,
+.thegem-te-menu-mobile__default.mobile-view .dl-menu.dl-subview li.dl-subview > span > a{
+    display: none;
+}
+.thegem-te-menu-mobile__default.mobile-view .dl-menu.dl-subview li.dl-subview,
+.thegem-te-menu-mobile__default.mobile-view .dl-menu.dl-subview li.dl-subview .dl-submenu,
+.thegem-te-menu-mobile__default.mobile-view .dl-menu.dl-subview li.dl-subviewopen,
+.thegem-te-menu-mobile__default.mobile-view .dl-menu.dl-subview li.dl-subviewopen > .dl-submenu,
+.thegem-te-menu-mobile__default.mobile-view .dl-menu.dl-subview li.dl-subviewopen > .dl-submenu > li{
+    display: block;
+}
+/* Dynamically added submenu outside of the menu context */
+.thegem-te-menu-mobile__default.mobile-view > .dl-submenu{
+    position: absolute;
+    width: 100vw;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0 21px;
+}
+/* Animation classes for moving out and in */
+.thegem-te-menu-mobile__default.mobile-view .dl-menu.dl-animate-out {
+    -webkit-animation: MenuAnimOut 0.4s;
+    animation: MenuAnimOut 0.4s;
+}
+@-webkit-keyframes MenuAnimOut {
+    0% { }
+    50% {
+        -webkit-transform: translateZ(-250px) rotateY(30deg);
+    }
+    75% {
+        -webkit-transform: translateZ(-372.5px) rotateY(15deg);
+        opacity: .5;
+    }
+    100% {
+        -webkit-transform: translateZ(-500px) rotateY(0deg);
+        opacity: 0;
+    }
+}
+@keyframes MenuAnimOut {
+    0% { }
+    50% {
+        -webkit-transform: translateZ(-250px) rotateY(30deg);
+        transform: translateZ(-250px) rotateY(30deg);
+    }
+    75% {
+        -webkit-transform: translateZ(-372.5px) rotateY(15deg);
+        transform: translateZ(-372.5px) rotateY(15deg);
+        opacity: .5;
+    }
+    100% {
+        -webkit-transform: translateZ(-500px) rotateY(0deg);
+        transform: translateZ(-500px) rotateY(0deg);
+        opacity: 0;
+    }
+}
+.thegem-te-menu-mobile__default.mobile-view .dl-menu.dl-animate-in {
+    -webkit-animation: MenuAnimIn 0.3s;
+    animation: MenuAnimIn 0.3s;
+}
+@-webkit-keyframes MenuAnimIn {
+    0% {
+        -webkit-transform: translateZ(-500px) rotateY(0deg);
+        opacity: 0;
+    }
+    20% {
+        -webkit-transform: translateZ(-250px) rotateY(30deg);
+        opacity: 0.5;
+    }
+    100% {
+        -webkit-transform: translateZ(0px) rotateY(0deg);
+        opacity: 1;
+    }
+}
+@keyframes MenuAnimIn {
+    0% {
+        -webkit-transform: translateZ(-500px) rotateY(0deg);
+        transform: translateZ(-500px) rotateY(0deg);
+        opacity: 0;
+    }
+    20% {
+        -webkit-transform: translateZ(-250px) rotateY(30deg);
+        transform: translateZ(-250px) rotateY(30deg);
+        opacity: 0.5;
+    }
+    100% {
+        -webkit-transform: translateZ(0px) rotateY(0deg);
+        transform: translateZ(0px) rotateY(0deg);
+        opacity: 1;
+    }
+}
+.thegem-te-menu-mobile__default.mobile-view .dl-menu + .dl-submenu.dl-animate-in {
+    -webkit-animation: SubMenuAnimIn 0.4s ease;
+    animation: SubMenuAnimIn 0.4s ease;
+}
+@-webkit-keyframes SubMenuAnimIn {
+    0% {
+        -webkit-transform: translateX(50%);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes SubMenuAnimIn {
+    0% {
+        -webkit-transform: translateX(50%);
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.thegem-te-menu-mobile__default.mobile-view .dl-menu + .dl-submenu.dl-animate-out {
+    -webkit-animation: SubMenuAnimOut 0.4s ease;
+    animation: SubMenuAnimOut 0.4s ease;
+}
+@-webkit-keyframes SubMenuAnimOut {
+    0% {
+        -webkit-transform: translateX(0%);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateX(50%);
+        opacity: 0;
+    }
+}
+@keyframes SubMenuAnimOut {
+    0% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateX(50%);
+        transform: translateX(50%);
+        opacity: 0;
+    }
+}
+/* No JS Fallback */
+.no-js .thegem-te-menu-mobile__default.mobile-view .dl-menu {
+    position: relative;
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+}
+.no-js .thegem-te-menu-mobile__default.mobile-view li .dl-submenu {
+    display: block;
+}
+.no-js .thegem-te-menu-mobile__default.mobile-view li.dl-back {
+    display: none;
+}
+.no-js .thegem-te-menu-mobile__default.mobile-view li > a:not(:only-child):after {
+    content: '';
+}
+
+/* Search Widget */
+.thegem-te-menu-mobile__default.mobile-view.show-mobile-search li.menu-item-type-search-widget{
+    display: block !important;
+}
+.thegem-te-menu-mobile__default.mobile-view.show-mobile-search li.menu-item-type-search-widget > a{
+    display: none;
+}
+.thegem-te-menu-mobile__default.mobile-view ul.nav-menu > li.menu-item-type-search-widget > .minisearch {
+    position: static;
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+    padding: 20px 30px;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    background-color: var(--thegem-to-mobile-menu-level1-bg-color);
+    border: 1px solid var(--thegem-to-mobile-menu-border-color);
+    border-top: none;
+}
+.thegem-te-menu-mobile__default.mobile-view ul.nav-menu > li.menu-item-type-search-widget > .minisearch form{
+    position: relative;
+    width: 100%;
+}
+.thegem-te-menu-mobile__default.mobile-view ul.nav-menu > li.menu-item-type-search-widget > .minisearch .sf-input {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    padding-right: 40px;
+    font-size: 16px;
+    color: var(--thegem-to-mobile-menu-level1-active-color);
+    border: 1px solid var(--thegem-to-mobile-menu-border-color);
+    background-color: transparent;
+    outline: none;
+}
+.thegem-te-menu-mobile__default.mobile-view ul.nav-menu > li.menu-item-type-search-widget > .minisearch .sf-input::placeholder{
+    color: var(--thegem-to-mobile-menu-level1-color);
+}
+.thegem-te-menu-mobile__default.mobile-view ul.nav-menu > li.menu-item-type-search-widget > .minisearch .sf-submit-icon {
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 40px;
+}
+.thegem-te-menu-mobile__default.mobile-view ul.nav-menu > li.menu-item-type-search-widget > .minisearch .sf-submit-icon:before {
+    content: "\e612";
+    display: block;
+    font-family: "thegem-icons";
+    font-style: normal;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 40px;
+    margin-right: 5px;
+    padding-right: 3px;
+    text-align: center;
+    vertical-align: top;
+    width: 100%;
+    height: 40px;
+    color: var(--thegem-to-mobile-menu-level1-active-color);
+}
+.thegem-te-menu-mobile__default.mobile-view ul.nav-menu > li.menu-item-type-search-widget > .minisearch .sf-submit {
+    position: absolute;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}

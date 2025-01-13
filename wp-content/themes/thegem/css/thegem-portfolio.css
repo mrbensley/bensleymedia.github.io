@@ -1021,7 +1021,7 @@
 	-o-filter: blur(3px);
 	-ms-filter: blur(3px);
 	filter: blur(3px);
-	filter: url(https://mrbensley.github.io/bensleymedia.github.io/wp-content/themes/thegem/css/blur.svg#blur);
+	filter: url(/wp-content/themes/thegem/css/blur.svg#blur);
 	filter: progid:DXImageTransform.Microsoft.Blur(pixelRadius=3);
 }
 
@@ -4399,7 +4399,7 @@
 }
 
 .portfolio-image-slider .btn.btn-prev:before {
-	background-image: url('https://mrbensley.github.io/bensleymedia.github.io/wp-content/themes/thegem/images/ar2.svg');
+	background-image: url('/wp-content/themes/thegem/images/ar2.svg');
 }
 
 .portfolio-image-slider .btn.btn-next {
@@ -4407,7 +4407,7 @@
 }
 
 .portfolio-image-slider .btn.btn-next:before {
-	background-image: url('https://mrbensley.github.io/bensleymedia.github.io/wp-content/themes/thegem/images/ar1.svg');
+	background-image: url('/wp-content/themes/thegem/images/ar1.svg');
 }
 
 .portfolio-image-slider .slide img {

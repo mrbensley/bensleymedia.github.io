@@ -1,0 +1,145 @@
+.thegem-te-search {
+	position: relative;
+	width: fit-content;
+}
+
+/*Search icon*/
+.thegem-te-search .thegem-te-search__item {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.thegem-te-search .thegem-te-search__item a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 24px;
+	color: var(--thegem-to-menu-level1-color, #3C3950);
+}
+
+.thegem-te-search .thegem-te-search__item a i,
+.thegem-te-search .thegem-te-search__item a i:before {
+	display: block;
+	font-style: normal;
+	font-size: inherit;
+}
+
+.thegem-te-search .thegem-te-search__item a:hover,
+.thegem-te-search .thegem-te-search__item.active a {
+	color: var(--thegem-to-menu-level1-color-hover, #00BCD4);
+}
+
+.thegem-te-search .thegem-te-search__item a .open i.default:before {
+	content: "\e612";
+	font-family: "thegem-icons";
+}
+
+.thegem-te-search .thegem-te-search__item a .close {
+	display: none;
+}
+
+.thegem-te-search .thegem-te-search__item a .close i.default:before {
+	content: "\e619";
+	font-family: "thegem-icons";
+}
+
+.thegem-te-search .thegem-te-search__item.fullscreen > a .close,
+.thegem-te-search .thegem-te-search__item.active > a .close {
+	display: block;
+}
+
+.thegem-te-search .thegem-te-search__item.fullscreen > a .open,
+.thegem-te-search .thegem-te-search__item.active > a .open {
+	display: none;
+}
+
+/*Use Light Color Scheme*/
+#site-header.header-light .thegem-te-search .thegem-te-search__item a {
+	color: var(--header-builder-light-color, #FFFFFF);
+}
+#site-header.header-light .thegem-te-search .thegem-te-search__item a:hover,
+#site-header.header-light .thegem-te-search .thegem-te-search__item.active a {
+	color: var(--header-builder-light-color-hover, var(--thegem-to-menu-level1-color-hover));
+}
+
+/*Mini search*/
+.thegem-te-search .minisearch {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	padding: 20px;
+	width: 280px;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(20px);
+}
+
+.thegem-te-search .thegem-te-search__item.active .minisearch {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+	transition: transform 0.3s linear, opacity 0.3s linear, visibility 0.3s linear;
+}
+
+.thegem-te-search .minisearch.invert {
+	left: auto;
+	right: 0;
+}
+
+.thegem-te-search .minisearch form {
+	position: relative;
+}
+
+.thegem-te-search .minisearch .sf-input {
+	font-size: 16px;
+	width: 100%;
+	height: 40px;
+	border-radius: 4px;
+	padding-right: 40px;
+	outline: none;
+}
+
+.thegem-te-search .minisearch .sf-submit {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 40px;
+	height: 40px;
+	margin: 0;
+	background: rgba(0, 0, 0, 0);
+	border: 0;
+	cursor: pointer;
+	font-size: 0;
+}
+
+.thegem-te-search .minisearch .sf-submit:hover {
+	background: transparent;
+}
+
+.thegem-te-search .minisearch .sf-submit:focus {
+	outline: none;
+}
+
+.thegem-te-search .minisearch .sf-submit-icon {
+	position: absolute;
+	right: 0;
+	width: 40px;
+	height: 40px;
+}
+
+.thegem-te-search .minisearch .sf-submit-icon:before {
+	content: "\e612";
+	display: block;
+	font-family: "thegem-icons";
+	font-style: normal;
+	font-size: 24px;
+	font-weight: normal;
+	line-height: 40px;
+	margin-right: 5px;
+	padding-right: 3px;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+	height: 40px;
+}

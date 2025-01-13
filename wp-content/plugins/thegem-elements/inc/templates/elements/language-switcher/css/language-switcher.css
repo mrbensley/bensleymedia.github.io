@@ -1,0 +1,194 @@
+.thegem-te-language-switcher{
+    position: relative;
+    width: fit-content;
+}
+
+/* Dropdown switcher */
+.thegem-te-language-switcher-dropdown .dropdown-item{
+    position: relative;
+    padding-right: 16px;
+    cursor: pointer;
+}
+.thegem-te-language-switcher-dropdown .dropdown-item:after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: -1px;
+    content: '\e602';
+    font-family: 'thegem-icons';
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--thegem-to-body-font-size);
+    color: var(--thegem-to-body-color);
+    transition: all 0.3s;
+}
+.thegem-te-language-switcher-dropdown .dropdown-item.flag-only{
+    padding: 0;
+}
+.thegem-te-language-switcher-dropdown .dropdown-item.flag-only:after{
+    display: none;
+}
+.thegem-te-language-switcher-dropdown .dropdown-item > .dropdown-item__wrapper{
+    transform: translateY(20px);
+}
+.thegem-te-language-switcher-dropdown .dropdown-item:hover:after{
+    transform: rotate(180deg);
+}
+.thegem-te-language-switcher-dropdown .dropdown-item:hover > .dropdown-item__current{
+    opacity: 0.8;
+}
+.thegem-te-language-switcher-dropdown .dropdown-item:hover > .dropdown-item__wrapper{
+    opacity: 1;
+    visibility: visible;
+    transition: transform 0.3s linear, opacity 0.3s linear, visibility 0.3s linear;
+    transform: translateY(0);
+}
+
+.thegem-te-language-switcher-dropdown .dropdown-item__current{
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-family: var(--thegem-to-body-tiny-font-family);
+    font-style: var(--thegem-to-body-tiny-font-style);
+    font-weight: var(--thegem-to-body-tiny-font-weight);
+    font-size: var(--thegem-to-body-tiny-font-size);
+    line-height: var(--thegem-to-body-tiny-line-height);
+    letter-spacing: var(--thegem-to-body-tiny-letter-spacing);
+    text-transform: var(--thegem-to-body-tiny-text-transform);
+    text-decoration: none;
+    color: var(--thegem-to-body-color);
+    background-color: transparent;
+    transition: all 0.3s linear;
+}
+.thegem-te-language-switcher-dropdown .dropdown-item .flag{
+    line-height: 0;
+    margin-top: -1px;
+    margin-right: 5px;
+}
+.thegem-te-language-switcher-dropdown .dropdown-item .flag img{
+    border-radius: 2px;
+}
+.thegem-te-language-switcher-dropdown .dropdown-item.flag-only .flag{
+    margin: 0;
+}
+.thegem-te-language-switcher-dropdown .dropdown-item .name.capitalize{
+    text-transform: uppercase;
+}
+.thegem-te-language-switcher-dropdown .dropdown-item__wrapper{
+    position: absolute;
+    min-width: calc(100% + 20px);
+    top: 100%;
+    left: 0;
+    padding: 10px 20px;
+    opacity: 0;
+    margin-left: -20px;
+    visibility: hidden;
+    overflow: hidden;
+    overflow-y: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    z-index: 1;
+    transition: transform 0.1s linear 0.5s, opacity 0.1s linear 0.5s, visibility 0.1s linear 0.5s;
+}
+.thegem-te-language-switcher-dropdown .dropdown-item__wrapper.invert{
+    left: auto;
+    right: 0;
+    margin-left: 0;
+}
+.thegem-te-language-switcher-dropdown .dropdown-item__wrapper ul{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.thegem-te-language-switcher-dropdown .dropdown-item__wrapper ul li{
+    position: relative;
+    margin: 3px 0;
+}
+.thegem-te-language-switcher-dropdown .dropdown-item__wrapper ul li a{
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 20px;
+    font-family: var(--thegem-to-body-tiny-font-family);
+    font-style: var(--thegem-to-body-tiny-font-style);
+    font-weight: var(--thegem-to-body-tiny-font-weight);
+    font-size: var(--thegem-to-body-tiny-font-size);
+    line-height: var(--thegem-to-body-tiny-line-height);
+    letter-spacing: var(--thegem-to-body-tiny-letter-spacing);
+    text-transform: var(--thegem-to-body-tiny-text-transform);
+    text-decoration: none;
+    color: var(--thegem-to-body-color);
+    white-space: nowrap;
+}
+.thegem-te-language-switcher-dropdown .dropdown-item__wrapper ul li a:hover{
+    color: var(--thegem-to-link-color-active);
+}
+
+/* List switcher */
+.thegem-te-language-switcher-list{
+    position: relative;
+}
+.thegem-te-language-switcher-list ul{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    padding: 0;
+}
+.thegem-te-language-switcher-list ul li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+.thegem-te-language-switcher-list ul li a{
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-family: var(--thegem-to-body-tiny-font-family);
+    font-style: var(--thegem-to-body-tiny-font-style);
+    font-weight: var(--thegem-to-body-tiny-font-weight);
+    font-size: var(--thegem-to-body-tiny-font-size);
+    line-height: var(--thegem-to-body-tiny-line-height);
+    letter-spacing: var(--thegem-to-body-tiny-letter-spacing);
+    text-transform: var(--thegem-to-body-tiny-text-transform);
+    text-decoration: none;
+    color: var(--thegem-to-body-color);
+    background-color: transparent;
+}
+.thegem-te-language-switcher-list ul li a:before {
+    content: '\e601';
+    font-family: 'thegem-icons';
+    font-style: normal;
+    font-weight: normal;
+    margin-right: 2px;
+    font-size: var(--thegem-to-body-font-size);
+}
+.thegem-te-language-switcher-list ul li a .flag{
+    line-height: 0;
+    margin-top: -1px;
+    margin-right: 5px;
+}
+.thegem-te-language-switcher-list ul li a:hover{
+    color: var(--thegem-to-link-color-active);
+}
+.thegem-te-language-switcher-list ul li a.flag-only:before{
+    display: none;
+}
+.thegem-te-language-switcher-list ul li a .name.capitalize{
+    text-transform: uppercase;
+}
+
+
+/* Switcher Light Color Scheme */
+#site-header.header-light .thegem-te-language-switcher-dropdown .dropdown-item__current,
+#site-header.header-light .thegem-te-language-switcher-dropdown .dropdown-item:after,
+#site-header.header-light .thegem-te-language-switcher-list ul li a{
+    color: var(--header-builder-light-color, #FFFFFF);
+}
+#site-header.header-light .thegem-te-language-switcher-list ul li a:hover{
+    color: var(--header-builder-light-color-hover, var(--thegem-to-menu-level1-color-hover));
+}

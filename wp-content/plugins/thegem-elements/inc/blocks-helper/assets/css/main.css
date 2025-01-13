@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Source+Sans+Pro:300,400');
+
+.vc_ui-panel-templates-body #vc_ui-panel-templates:not(.vc_minimized) {
+    max-height: 100%;
+    bottom: 0;
+}
+
+#vc_no-content-add-text-block {
+    display: none !important;
+}
+
+#vc_no-content-add-element,
+#vc_templates-more-layouts {
+    display: inline-flex;
+    align-items: center;
+}
+
+.vc-c-icon-add_template:before {
+    content: url("/wp-content/plugins/thegem-elements/inc/blocks-helper/assets/img/icon-logo.svg");
+    width: 23px;
+    height: 23px;
+    display: inline-block;
+}
+
+.vc_welcome .vc_welcome-header {
+    font-family: 'Montserrat';
+    font-weight: 200;
+    font-size: 28px;
+    line-height: 42px;
+    color: #5f727f;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.vc_welcome .vc_ui-button {
+    min-width: 254px;
+}
+
+.vc_welcome .vc_ui-help-block {
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #99a9b5;
+}
+
+.vc_welcome .vc_ui-help-block a {
+    color: #00bcd4;
+    font-weight: 400;
+}
+
+.vc_welcome.vc_not-empty .vc_ui-btn-group.vc_welcome-visible-e {
+    display: block;
+}
+
+.vc_welcome.vc_not-empty .vc_ui-btn-group .vc_welcome-visible-e {
+    display: inline-flex;
+}
+
+.vc_welcome .vc_welcome-visible-ne {
+    display: none !important;
+}
+
+.thegem-blocks-helper-box {
+    margin-bottom: 40px;
+}
+
+.thegem-blocks-helper-box p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,91 @@
+.thegem-te-cart{
+    position: relative;
+    width: fit-content;
+}
+
+/*Cart Link*/
+.thegem-te-cart .minicart-menu-link{
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: var(--thegem-to-menu-level1-color, #3C3950);
+}
+
+/*Light cart style*/
+#site-header.header-light .thegem-te-cart .minicart-menu-link{
+    color: var(--header-builder-light-color, #FFFFFF);
+}
+
+@media (min-width: 992px) {
+    .thegem-te-cart:hover .minicart-menu-link{
+        color: var(--thegem-to-menu-level1-color-hover, #00BCD4);
+    }
+    #site-header.header-light .thegem-te-cart:hover .minicart-menu-link{
+        color: var(--header-builder-light-color-hover, var(--thegem-to-menu-level1-color-hover));
+    }
+}
+
+.thegem-te-cart .minicart-menu-link:before{
+    content: var(--thegem-to-cart-icon-icon, '\e67d');
+    font-family: var(--thegem-to-cart-icon-font, 'thegem-icons');
+    font-size: 24px;
+}
+.thegem-te-cart.label-count .minicart-item-count,
+.thegem-te-cart.circle-count .minicart-item-count{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    top: 2px;
+    right: -8px;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    font-size: 11px;
+    color: var(--thegem-to-main-bg-color, #FFFFFF);
+    background-color: var(--thegem-to-cart-amount-color, var(--thegem-to-styled-color1));
+    transform: translateY(-50%);
+}
+
+@media (min-width: 1025px) {
+    .thegem-te-cart.label-count .minicart-item-count{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 0;
+        top: 0;
+        width: 23px;
+        height: 18px;
+        font-size: 87.5%;
+        text-align: center;
+        line-height: 1.2;
+        margin: 0 0 0 10px;
+        border-radius: 0;
+        transform: none;
+        z-index: 1;
+        color: var(--thegem-to-main-bg-color, #FFFFFF);
+        background-color: var(--thegem-to-cart-amount-color, var(--thegem-to-styled-color1));
+    }
+    .thegem-te-cart.label-count .minicart-item-count:after {
+        content: '';
+        position: absolute;
+        left: -6px;
+        top: 3px;
+        width: 12px;
+        height: 12px;
+        transform: rotate(45deg);
+        background-color: var(--thegem-to-cart-amount-color, var(--thegem-to-styled-color1));
+        z-index: -1;
+    }
+}
+.thegem-te-cart .minicart-menu-link.empty .minicart-item-count{
+    display: none;
+}
+
+/*Mini-cart Desktop*/
+.thegem-te-cart.desktop-view .minicart{
+    display: none;
+}

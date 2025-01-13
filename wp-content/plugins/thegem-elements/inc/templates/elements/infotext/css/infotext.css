@@ -1,0 +1,233 @@
+/* Infotext General */
+.thegem-te-infotext{
+	position: relative;
+	width: fit-content;
+}
+.thegem-te-infotext.alignment-center {
+	margin-left: auto;
+	margin-right: auto;
+}
+.thegem-te-infotext.alignment-right {
+	margin-left: auto;
+}
+.thegem-te-infotext-wrap{
+	position: relative;
+	display: flex;
+	color: inherit;
+}
+.thegem-te-infotext a{
+	cursor: pointer;
+}
+.thegem-te-infotext-wrap:hover{
+	color: inherit;
+}
+
+/* Infotext Positions Update */
+.thegem-te-infotext-wrap.position--top{
+	flex-direction: column;
+}
+.thegem-te-infotext-wrap.position--bottom{
+	flex-direction: column-reverse;
+}
+.thegem-te-infotext-wrap.position--left{
+	justify-content: flex-start;
+}
+.thegem-te-infotext-wrap.position--right{
+	justify-content: flex-end;
+	flex-direction: row-reverse;
+}
+.thegem-te-infotext-wrap.position--top.horizonal--left,
+.thegem-te-infotext-wrap.position--bottom.horizonal--left{
+	align-items: flex-start;
+}
+.thegem-te-infotext-wrap.position--top.horizonal--center,
+.thegem-te-infotext-wrap.position--bottom.horizonal--center{
+	align-items: center;
+}
+.thegem-te-infotext-wrap.position--top.horizonal--right,
+.thegem-te-infotext-wrap.position--bottom.horizonal--right{
+	align-items: flex-end;
+}
+.thegem-te-infotext-wrap.position--left.vertical--top,
+.thegem-te-infotext-wrap.position--right.vertical--top{
+	align-items: flex-start;
+}
+.thegem-te-infotext-wrap.position--left.vertical--center,
+.thegem-te-infotext-wrap.position--right.vertical--center{
+	align-items: center;
+}
+.thegem-te-infotext-wrap.position--left.vertical--bottom,
+.thegem-te-infotext-wrap.position--right.vertical--bottom{
+	align-items: flex-end;
+}
+
+/* Infotext Icon */
+.thegem-te-info-icon{
+	position: relative;
+}
+.thegem-te-info-icon .gem-icon-size-tiny {
+	font-size: 16px;
+}
+.thegem-te-info-icon .gem-icon-size-tiny.gem-simple-icon {
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+}
+.thegem-te-info-icon .gem-icon-size-tiny:not(.gem-simple-icon) .gem-icon-inner {
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+}
+.thegem-te-info-icon .gem-icon {
+	display: block;
+}
+/*.thegem-te-info-icon .gem-icon.gem-simple-icon {
+	width: auto;
+	height: auto;
+	line-height: initial;
+}*/
+.thegem-te-info-icon .gem-icon.gem-simple-icon .gem-icon-inner {
+	margin: 0;
+}
+.thegem-te-info-icon .gem-icon-inner,
+.thegem-te-info-icon .gem-icon-style-gradient .back-angle,
+.thegem-te-info-icon .gem-icon-shape-hexagon-top-inner-before {
+	-webkit-transition: background-color .3s;
+	-moz-transition: background-color .3s;
+	-o-transition: background-color .3s;
+	transition: background-color .3s;
+}
+.thegem-te-info-icon .gem-icon-half-1,
+.thegem-te-info-icon .gem-icon-half-2 {
+	-webkit-transition: color .3s;
+	-moz-transition: color .3s;
+	-o-transition: color .3s;
+	transition: color .3s;
+}
+.thegem-te-info-icon .gem-icon {
+	-webkit-transition: color .3s, border-color .3s;
+	-moz-transition: color .3s, border-color .3s;
+	-o-transition: color .3s, border-color .3s;
+	transition: color .3s, border-color .3s;
+	color: var(--thegem-to-menu-level1-color, #3C3950);
+}
+
+/* Infotext Texts */
+.thegem-te-info-text{
+	position: relative;
+}
+.thegem-te-info-text__title{
+	position: relative;
+}
+.thegem-te-info-text__subtitle{
+	position: relative;
+}
+.thegem-te-info-text__description{
+	position: relative;
+}
+
+.thegem-te-info-text__title .title-default,
+.thegem-te-info-text__subtitle .title-default,
+.thegem-te-info-text__description .title-default,
+.thegem-te-info-text__title .title-h1,
+.thegem-te-info-text__subtitle .title-h1,
+.thegem-te-info-text__description .title-h1,
+.thegem-te-info-text__title .title-h2,
+.thegem-te-info-text__subtitle .title-h2,
+.thegem-te-info-text__description .title-h2,
+.thegem-te-info-text__title .title-h3,
+.thegem-te-info-text__subtitle .title-h3,
+.thegem-te-info-text__description .title-h3,
+.thegem-te-info-text__title .title-h4,
+.thegem-te-info-text__subtitle .title-h4,
+.thegem-te-info-text__description .title-h4,
+.thegem-te-info-text__title .title-h5,
+.thegem-te-info-text__subtitle .title-h5,
+.thegem-te-info-text__description .title-h5,
+.thegem-te-info-text__title .title-h6,
+.thegem-te-info-text__subtitle .title-h6,
+.thegem-te-info-text__description .title-h6,
+.thegem-te-info-text__title .title-xlarge,
+.thegem-te-info-text__subtitle .title-xlarge,
+.thegem-te-info-text__description .title-xlarge,
+.thegem-te-info-text__title .styled-subtitle,
+.thegem-te-info-text__subtitle .styled-subtitle,
+.thegem-te-info-text__description .styled-subtitle,
+.thegem-te-info-text__title .text-body,
+.thegem-te-info-text__subtitle .text-body,
+.thegem-te-info-text__description .text-body,
+.thegem-te-info-text__title .text-body-tiny,
+.thegem-te-info-text__subtitle .text-body-tiny,
+.thegem-te-info-text__description .text-body-tiny{
+	padding: 0;
+	margin: 0;
+	-webkit-transition: color .3s;
+	-moz-transition: color .3s;
+	-o-transition: color .3s;
+	transition: color .3s;
+}
+.thegem-te-info-text__title .title-default,
+.thegem-te-info-text__subtitle .title-default,
+.thegem-te-info-text__description .title-default {
+	font-family: var(--thegem-to-menu-font-family, 'Montserrat');
+	font-style: var(--thegem-to-menu-font-style, normal);
+	font-weight: var(--thegem-to-menu-font-weight, 700);
+	font-size: var(--thegem-to-menu-font-size, 14px);
+	line-height: var(--thegem-to-menu-line-height, 25px);
+	letter-spacing: var(--thegem-to-menu-letter-spacing, 0);
+	text-transform: var(--thegem-to-menu-text-transform, uppercase);
+	color: var(--thegem-to-h6-color);
+}
+.thegem-te-info-text__title .title-default.light,
+.thegem-te-info-text__subtitle .title-default.light,
+.thegem-te-info-text__description .title-default.light {
+	font-family: var(--thegem-to-light-title-font-family);
+	font-style: var(--thegem-to-light-title-font-style);
+	font-weight: normal;
+}
+.thegem-te-info-text__title .text-body,
+.thegem-te-info-text__subtitle .text-body,
+.thegem-te-info-text__description .text-body{
+	font-family: var(--thegem-to-body-font-family);
+	font-style: var(--thegem-to-body-font-style);
+	font-weight: var(--thegem-to-body-font-weight);
+	font-size: var(--thegem-to-body-font-size);
+	line-height: var(--thegem-to-body-line-height);
+	letter-spacing: var(--thegem-to-body-letter-spacing);
+	text-transform: var(--thegem-to-body-text-transform);
+}
+.thegem-te-info-text__title .text-body-tiny,
+.thegem-te-info-text__subtitle .text-body-tiny,
+.thegem-te-info-text__description .text-body-tiny{
+	font-family: var(--thegem-to-body-tiny-font-family);
+	font-style: var(--thegem-to-body-tiny-font-style);
+	font-weight: var(--thegem-to-body-tiny-font-weight);
+	font-size: var(--thegem-to-body-tiny-font-size);
+	line-height: var(--thegem-to-body-tiny-line-height);
+	letter-spacing: var(--thegem-to-body-tiny-letter-spacing);
+	text-transform: var(--thegem-to-body-tiny-text-transform);
+}
+
+.thegem-te-infotext a:hover .thegem-te-info-icon .gem-icon-half-1,
+.thegem-te-infotext a:hover .thegem-te-info-icon .gem-icon-half-2,
+.thegem-te-infotext a:hover .thegem-te-info-text .title-customize,
+.thegem-te-infotext a:hover .thegem-te-info-text .subtitle-customize,
+.thegem-te-infotext a:hover .thegem-te-info-text .description-customize{
+	color: var(--thegem-to-menu-level1-color-hover, #00BCD4);
+}
+
+/*Light icon style*/
+#site-header.header-light .thegem-te-info-icon .gem-icon .gem-icon-half-1,
+#site-header.header-light .thegem-te-info-icon .gem-icon .gem-icon-half-2,
+#site-header.header-light .thegem-te-info-text .title-customize,
+#site-header.header-light .thegem-te-info-text .subtitle-customize,
+#site-header.header-light .thegem-te-info-text .description-customize{
+	color: var(--header-builder-light-color, #FFFFFF) !important;
+}
+#site-header.header-light a:hover .thegem-te-info-icon .gem-icon .gem-icon-half-1,
+#site-header.header-light a:hover .thegem-te-info-icon .gem-icon .gem-icon-half-2,
+#site-header.header-light a:hover .thegem-te-info-text .title-customize,
+#site-header.header-light a:hover .thegem-te-info-text .subtitle-customize,
+#site-header.header-light a:hover .thegem-te-info-text .description-customize{
+	color: var(--header-builder-light-color-hover, var(--thegem-to-menu-level1-color-hover));
+}

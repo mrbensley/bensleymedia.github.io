@@ -1,0 +1,9 @@
+.thegem-te-button .gem-button {
+	margin: 0;
+}
+.gem-button-font-type-body .gem-button {
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 87.5%;
+}

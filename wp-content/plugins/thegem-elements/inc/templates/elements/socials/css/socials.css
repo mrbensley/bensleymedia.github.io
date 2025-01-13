@@ -1,0 +1,32 @@
+.thegem-te-socials .thegem-te-socials-size-tiny .socials-item-icon {
+	font-size: 16px;
+}
+.thegem-te-socials .thegem-te-socials-size-small .socials-item-icon {
+	font-size: 24px;
+}
+.thegem-te-socials .thegem-te-socials-size-medium .socials-item-icon {
+	font-size: 48px;
+}
+.thegem-te-socials .thegem-te-socials-size-large .socials-item-icon {
+	font-size: 96px;
+}
+.thegem-te-socials .thegem-te-socials-size-xlarge .socials-item-icon {
+	font-size: 144px;
+}
+.thegem-te-socials .thegem-te-socials-size-custom .socials-item-icon {
+	font-size: 16px;
+}
+.thegem-te-socials .socials-list .socials-item {
+	margin-bottom: 0;
+}
+.thegem-te-socials .socials-list {
+	line-height: 1;
+}
+
+/*Use Light Color Scheme*/
+#site-header.header-light .thegem-te-socials .socials-list .socials-item .socials-item-icon{
+	color: var(--header-builder-light-color, #FFFFFF);
+}
+#site-header.header-light .thegem-te-socials .socials-list .socials-item:hover .socials-item-icon{
+	color: var(--header-builder-light-color-hover, var(--thegem-to-menu-level1-color-hover));
+}

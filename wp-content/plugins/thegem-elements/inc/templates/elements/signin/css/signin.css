@@ -1,0 +1,86 @@
+.thegem-te-signin{
+    position: relative;
+}
+.thegem-te-signin .signin-link{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+
+    font-family: var(--thegem-to-body-tiny-font-family);
+    font-style: var(--thegem-to-body-tiny-font-style);
+    font-weight: var(--thegem-to-body-tiny-font-weight);
+    font-size: var(--thegem-to-body-tiny-font-size);
+    letter-spacing: var(--thegem-to-body-tiny-letter-spacing);
+    text-transform: var(--thegem-to-body-tiny-text-transform);
+    text-decoration: none;
+    color: var(--thegem-to-body-color);
+    background-color: transparent;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+.thegem-te-signin .signin-link:hover{
+    color: var(--thegem-to-link-color-active, #00BCD4);
+}
+.thegem-te-signin .signin-link .signin-link-icon .gem-icon{
+    color: inherit;
+}
+
+.thegem-te-signin .signin-link.signin-link-type--btn{
+    padding: 0 14px;
+    min-height: 30px;
+
+    font-family: var(--thegem-to-button-font-family);
+    font-style: var(--thegem-to-button-font-style);
+    font-weight: var(--thegem-to-button-font-weight);
+    letter-spacing: var(--thegem-to-button-letter-spacing);
+    text-transform: var(--thegem-to-button-text-transform);
+    border: 0 solid transparent;
+    border-radius: 3px;
+    color: var(--thegem-to-button-basic-color);
+    background-color: var(--thegem-to-button-basic-background-color);
+}
+.thegem-te-signin .signin-link.signin-link-type--btn:hover{
+    background-color: var(--thegem-to-button-basic-background-color-hover);
+    color: var(--thegem-to-button-basic-color-hover);
+}
+
+.thegem-te-signin .signin-link-icon{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+.thegem-te-signin .signin-link-icon i{
+    margin-right: 5px;
+    font-size: 24px;
+    line-height: 24px;
+}
+.thegem-te-signin .signin-link-icon.signin-link-icon--tiny i{
+    font-size: 16px;
+    line-height: 16px;
+}
+.thegem-te-signin .signin-link-icon.signin-link-icon--small i{
+    font-size: 24px;
+    line-height: 24px;
+}
+.thegem-te-signin .signin-link-icon.signin-link-icon--medium i{
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.thegem-te-signin .signin-link-text{
+    display: inline-flex;
+    transition: color 0.3s;
+    padding: 0;
+    margin: 0;
+}
+
+/*Light signin style*/
+#site-header.header-light .thegem-te-signin .signin-link{
+    color: var(--header-builder-light-color, #FFFFFF);
+}
+#site-header.header-light .thegem-te-signin .signin-link:hover{
+    color: var(--header-builder-light-color-hover, var(--thegem-to-menu-level1-color-hover));
+}
+
